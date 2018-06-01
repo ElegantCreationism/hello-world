@@ -28,9 +28,9 @@ build:
 
     # Gets the dependencies
     - script:
-        name: go get
+        name: dep
         code: |
-          go get
+          dep ensure -v
 
     # Build the project
     - script:
